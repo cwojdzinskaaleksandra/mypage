@@ -28,12 +28,21 @@ h2 {
     line-height: 1.2;
 }
 
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
 p {
     margin: 10px 0;
 }
 
 img {
     width: 100%;
+}
+
+.quote {
+    font-style: italic;
 }
 
 ::selection {
@@ -62,13 +71,16 @@ img {
     font-size: 20px;
 }
 
-.navbar a:hover {
+.navbar ul li:hover {
     border-bottom: #186360 3px solid;
-    /* color: #60aaa7; */
 }
 
 .navbar ul {
     display: flex;
+}
+
+.navbar ul li.active {
+    border-bottom: #186360 5px solid;
 }
 
 .hero {
@@ -115,18 +127,13 @@ img {
     z-index: 10;
 }
 
-#experience h2 {
-    text-align: center;
-    padding-top: 50px;
-}
-
 /* Icons */
 
 .icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 0 30px 30px;
 }
 
 .icons h3 {
@@ -147,6 +154,10 @@ img {
 
 .hobby img:hover {
     opacity: 1;
+}
+
+#experience {
+    min-height: 50vh;
 }
 
 /* Feedback form */
@@ -182,4 +193,11 @@ img {
 .feedback-form::placeholder {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 19px;
+}
+
+.contact img {
+    height: 70vh;
+    width: 70%;
+    object-fit: scale-down;
+    border-radius: 0;
 }

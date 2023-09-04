@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Aleksandra Cwojdzińska - Junior Software Developer</title>
+    <title>Aleksandra Cwojdzińska | Software Developer | Java & TypeScript & HTML & CSS </title>
 </head>
 
 <body id="home">
@@ -18,20 +18,20 @@
         <div id="navbar" class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
-                    <li><a href="#mywork">MY WORK</a></li>
-                    <li><a href="#hobby">HOBBY</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="active"><a href="#home">HOME</a></li>
+                    <li class="about"><a href="#about">ABOUT</a></li>
+                    <li class="experience"><a href="#experience">SKILLS</a></li>
+                    <!-- <li><a href="#mywork">MY WORK</a></li> -->
+                    <li class="hobby"><a href="#hobby">HOBBY</a></li>
+                    <li class="contact"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="welcome">
+        <div class="welcome" id="home">
             <div class="welcome-text">
                 <h1 class="heading1 text-secondary">Hello, I am </h1>
                 <h1 class="heading1 text-primary"> Aleksandra Cwojdzińska </h1>
-                <p class="paragraph text-secondary">JUNIOR SOFTWARE DEVELOPER</p>
+                <p class="paragraph text-secondary">SOFTWARE DEVELOPER</p>
             </div>
             <div class="welcome-links icons">
                 <a href="https://www.linkedin.com/in/aleksandra-cwojdzinska/" target="_blank"><i
@@ -46,15 +46,12 @@
                 <div class="column">
                     <div class="column-1">
                         <h2 class="heading2">Who am I?</h2>
-                        <p class="paragraph">Junior software developer with over a year of
-                            experience in full-stack development of Sales
-                            Force Automation applications for the
-                            telecommunication industry. My goal is to
-                            expand knowledge about inclusive and
-                            accessible programming.
+                        <p class="paragraph">I am a dedicated software developer with a deep passion for creating
+                            technology that is inclusive and accessible to all.
                             <br><br>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni ea officia aspernatur
-                            dolorem hic veniam quisquam itaque cum incidunt sequi.
+                            I believe in a user-centered approach,
+                            developing products that not only meet accessibility guidelines but also genuinely enhance
+                            the quality of life for those who use them.
                         </p>
 
                         <a href="./downloads/Aleksandra Cwojdzińska.pdf" download="Aleksandra_Cwojdzinska"
@@ -71,7 +68,7 @@
         </section>
 
         <section id="experience" class="bg-dark">
-            <h2 class="heading2">My experience</h2>
+            <h2 class="section-header">My skills</h2>
             <div class="icons">
                 <div class="flex-items">
                     <i class="fa-brands fa-angular fa-3x"></i>
@@ -101,18 +98,25 @@
                         <h3>JavaScript<br>TypeScript</h3>
                     </div>
                 </div>
+                <div class="flex-items">
+                    <i class="fa-brands fa-figma fa-3x"></i>
+                    <div>
+                        <h3>Figma</h3>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <section id="mywork" class="bg-dark">
-            <h2 class="heading2">My work</h2>
 
-        </section>
+        <!-- <section id="mywork" class="bg-dark">
+            <h2>My work</h2>
+
+        </section> -->
 
         <section id="hobby" class="hobby flex-grid section-padding bg-dark">
             <header class="section-header">
-                <h2 class="heading2">My hobbies</h2>
-                <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, consequuntur!
+                <h2>My hobbies</h2>
+                <p class="paragraph quote">"Life is not measured by the breaths you take, but by its breathtaking
+                    moments."
                 </p>
             </header>
 
@@ -136,11 +140,11 @@
             </div>
         </section>
 
-        <section id="contact" class="bg-dark flex-columns flex-reverse">
+        <section id="contact" class="contact bg-dark flex-columns flex-reverse">
             <div class="row">
                 <div class="column">
                     <div class="column-1">
-                        <h2 class="heading2">What can I improve here?</h2>
+                        <h2>What can I improve here?</h2>
                         <form action="" class="feedback-form">
                             <div class="form-control">
                                 <label for="name">Your name</label>
@@ -157,13 +161,13 @@
                 </div>
                 <div class="column">
                     <div class="column-2">
-                        <img src="./images/feedback.jpg" alt="The big support">
+                        <img src="./images/feedback.jpeg" alt="The big support">
                     </div>
                 </div>
             </div>
-
         </section>
 
+        <script src="./main.js"></script>
     </main>
 </body>
 
