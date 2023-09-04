@@ -145,7 +145,7 @@
                 <div class="column">
                     <div class="column-1">
                         <h2>What can I improve here?</h2>
-                        <form action="" class="feedback-form">
+                        <form action="https://formsubmit.co/aleksandra@cwojdzinska.pl" method="POST" class="feedback-form">
                             <div class="form-control">
                                 <label for="name">Your name</label>
                                 <input type="text" name="name" id="name" placeholder="Please enter your name">
@@ -153,9 +153,11 @@
                             <div class="form-control">
                                 <label for="feedback">Your feedback</label>
                                 <textarea name="feedback" id="feedback" cols="100" rows="10"
-                                    placeholder="Please enter your feedback"></textarea>
+                                    placeholder="Please enter your feedback" required></textarea>
                             </div>
                             <input type="submit" value="Share with me" id="submit" class="btn">
+                            <input type="hidden" name="_subject" value="Wiadomość z formularza kontaktowego">
+                            <input type="hidden" name="_next" value="http://aleksandra.cwojdzinska.pl/thankyou.html">
                         </form>
                     </div>
                 </div>

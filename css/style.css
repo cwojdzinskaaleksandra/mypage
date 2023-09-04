@@ -201,3 +201,23 @@ img {
     object-fit: scale-down;
     border-radius: 0;
 }
+
+/* Thank you page */
+
+.thankyou {
+    background: url('../images/thankyou.jpg') no-repeat center center/cover;
+    height: 100vh;
+    padding: 60px;
+    text-align: center;
+}
+
+.thankyou h1 {
+    font-size: 46px;
+    margin: 20px;
+}
+
+.thankyou h2 {
+    font-weight: 200;
+    font-size: 20px;
+    margin: 20px;
+}
