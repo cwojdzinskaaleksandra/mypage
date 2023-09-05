@@ -17,14 +17,18 @@
     <header class="hero">
         <div id="navbar" class="navbar">
             <nav>
-                <ul>
-                    <li class="active"><a href="#home">HOME</a></li>
-                    <li class="about"><a href="#about">ABOUT</a></li>
-                    <li class="experience"><a href="#experience">SKILLS</a></li>
-                    <!-- <li><a href="#mywork">MY WORK</a></li> -->
-                    <li class="hobby"><a href="#hobby">HOBBY</a></li>
-                    <li class="contact"><a href="#contact">CONTACT</a></li>
-                </ul>
+                <a href="#" class="toggle-button">
+                    <i class="fa-solid fa-bars"></i></a>
+                <div class="navbar-links">
+                    <ul>
+                        <li class="active"><a href="#home">HOME</a></li>
+                        <li class="about"><a href="#about">ABOUT</a></li>
+                        <li class="experience"><a href="#experience">SKILLS</a></li>
+                        <!-- <li><a href="#mywork">MY WORK</a></li> -->
+                        <li class="hobby"><a href="#hobby">HOBBY</a></li>
+                        <li class="contact"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
         <div class="welcome" id="home">
@@ -112,7 +116,7 @@
 
         </section> -->
 
-        <section id="hobby" class="hobby flex-grid section-padding bg-dark">
+        <section id="hobby" class="hobby flex-grid bg-dark">
             <header class="section-header">
                 <h2>My hobbies</h2>
                 <p class="paragraph quote">"Life is not measured by the breaths you take, but by its breathtaking
@@ -145,7 +149,8 @@
                 <div class="column">
                     <div class="column-1">
                         <h2>What can I improve here?</h2>
-                        <form action="https://formsubmit.co/aleksandra@cwojdzinska.pl" method="POST" class="feedback-form">
+                        <form action="https://formsubmit.co/aleksandra@cwojdzinska.pl" method="POST"
+                            class="feedback-form">
                             <div class="form-control">
                                 <label for="name">Your name</label>
                                 <input type="text" name="name" id="name" placeholder="Please enter your name">
