@@ -167,7 +167,8 @@ img {
 
 .icons {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 0 30px;
 }
@@ -193,7 +194,7 @@ img {
 }
 
 #experience {
-    min-height: 50vh;
+    min-height: 30vh;
 }
 
 /* Feedback form */
@@ -270,14 +271,34 @@ img {
     width: 30px;
     height: 21px;
 }
-@media (max-width: 500px) {
-    h1 {
-        font-size: 25px;
+
+@media (max-width: 1000px) {
+
+    .about .row {
+        flex-direction: column;
+    }
+
+    .flex-columns.flex-reverse .row {
+        flex-direction: column-reverse;
     }
 }
 
-@media (max-width: 620px) {
 
+@media (max-width: 800px) {
+    .flex-grid .column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+
+    .flex-grid .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 620px) {
     .navbar {
         height: 100px;
     }
@@ -286,19 +307,25 @@ img {
         flex-wrap: wrap;
         padding: 0 5px;
         align-items: center;
-        margin: auto;
+        justify-content: center;
     }
 
     h1 {
         font-size: 35px;
     }
 
-    .icons {
-        flex-direction: column;
-    }
-
     .icons i {
         padding: 5px;
     }
+}
 
+@media (max-width: 450px) {
+    .navbar a {
+        padding: 5px 10px;
+        margin: 15px 5px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
 }
