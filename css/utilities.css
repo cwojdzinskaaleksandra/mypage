@@ -7,21 +7,6 @@
     font-weight: 100;
 }
 
-/* Headings */
-
-.heading1 {
-    font-size: 50px;
-}
-
-.heading3 {
-    font-size: 25px;
-}
-
-.paragraph {
-    font-size: 20px;
-}
-
-
 /* Background */
 .bg-dark,
 .btn-dark {
@@ -70,6 +55,7 @@
     width: 70%;
     object-fit: cover;
     border-radius: 50%;
+    padding-bottom: 20px;
 }
 
 .flex-columns .column-1 {
@@ -92,7 +78,7 @@
 
 /* Section header */
 .section-header {
-    padding: 50px 30px 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +87,7 @@
 }
 
 section {
-    padding: 20px 20px 40px;
+    padding: 20px;
 }
 
 .flex-grid .row {

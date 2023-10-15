@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (scrollY >= sectionTop - sectionHeight / 3) {
+        if (scrollY >= sectionTop - sectionHeight / 4) {
             current = section.getAttribute('id');
         }
     });
@@ -18,18 +18,3 @@ window.addEventListener('scroll', () => {
         }
     })
 })
-
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-const link = document.querySelectorAll('nav ul a');
-
-// toggleButton.addEventListener('click', () => {
-//     navbarLinks.classList.toggle('active');
-// }, false);
-
-// for (let i = 0; i < link.length; i++) {
-//     link[i].addEventListener('click', (e) => {
-//         e.preventDefault();
-//         navbarLinks.classList.remove('active');
-//     }, false);
-// }

@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    background: #050406;
+    background: #030201;
     color: #fff;
     line-height: 1.6;
 }
@@ -28,13 +28,22 @@ h2 {
     line-height: 1.2;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 h2 {
     text-align: center;
     font-size: 35px;
 }
 
+h3 {
+    font-size: 25px;
+}
+
 p {
     margin: 10px 0;
+    font-size: 20px;
 }
 
 img {
@@ -62,10 +71,11 @@ img {
     position: fixed;
     top: 0px;
     padding: 0 30px;
+    background-color: #030201;
 }
 
 .navbar a {
-    color: rgb(198, 189, 189);
+    color: #c6bdbd;
     padding: 10px 20px;
     margin: 30px 5px;
     font-size: 20px;
@@ -87,6 +97,10 @@ img {
 .navbar ul li.active {
     background-color: #186360;
     border-radius: 20px;
+}
+
+.hero .navbar {
+    z-index: 20;
 }
 
 /* Header */
@@ -121,6 +135,20 @@ img {
     width: 100%;
 }
 
+.hero .welcome .location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero .welcome .location>* {
+    margin: 0 5px;
+}
+
+.hero .welcome .location p {
+    font-weight: 100;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -141,7 +169,7 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 30px 30px;
+    padding: 0 30px;
 }
 
 .icons h3 {
@@ -242,38 +270,35 @@ img {
     width: 30px;
     height: 21px;
 }
-
-@media (max-width: 600px) {
-    .toggle-button {
-        display: flex;
+@media (max-width: 500px) {
+    h1 {
+        font-size: 25px;
     }
+}
 
-    .navbar .navbar-links {
-        display: none;
-        width: 100%;
-    }
+@media (max-width: 620px) {
 
     .navbar {
+        height: 100px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        padding: 0 5px;
+        align-items: center;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .icons {
         flex-direction: column;
-        align-items: flex-start;
-        height: 200px;
-        margin-top: 10px;
     }
 
-    nav {
-        width: 100%;
+    .icons i {
+        padding: 5px;
     }
 
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
 }
